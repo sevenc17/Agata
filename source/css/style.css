@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #999;
 }
 
-.navline-bottom::before, .navline-top::after {
+.navline-bottom::before, .navline-bottom::after {
   content: "";
   position: absolute;
   height: 1px;

@@ -37,7 +37,6 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 
-
 @font-face {
 	font-family: 'AGaramondPro';
 	src: url('fonts/AGaramondPro Regular.eot');
@@ -166,104 +165,4 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 .navline-right {
 	position: absolute;
-}
-
-.arrow {
-	img {
-		width: 10%;
-	}
-}
-
-.home {
-	padding: 4%;
-	.home__collection {
-		padding: 2% 2% 0 2%;
-		.home__column {
-			display: flex;
-			justify-content: space-between;
-			.home__collection-list {
-				display: flex;
-				justify-content: space-between;
-				flex: 1 1 50%;
-				.home__featuredcoll {
-					position: relative;
-					margin-left: 10%;
-					.home__featured-image {
-						margin-bottom: 3%;
-						img {
-							width: 80%
-						}
-					}
-					.before, .after {
-						position: absolute;
-
-					}
-					.before {
-						top: 0;
-						transform:  translate(-110%, 250%) rotate(-90deg);
-						font-size: calc(3px + 9 * (100vw / 1400));
-						color: #999;
-					}
-					.after {
-						bottom: 12%;
-						transform:  translate(-40%, 0);
-						font-size: calc(5px + 14 * (100vw / 1400));
-						color: #000;
-					}
-					.arrow {
-						transform: translate(-14%, 0);
-					}
-				}
-			}
-			.home__list {
-				display: flex;
-				flex: 1 1 50%;
-				.home__list-list{
-					flex: 1 1 33.333%;
-					align-self: flex-end;
-					margin: 0 0 0 20%;
-					font-family: 'AGaramondPro';
-					font-size: calc(7px + 6 * (100vw / 1400));
-					ol{
-						li::marker {
-							content: 'Coll. № ' counter(list-item);
-							color: #999;
-							text-align: left !important;
-						}
-						li {
-							padding: 0 0 10% 7%;
-							a {
-								color: #000;
-							}
-							a:visited {
-								color: #000;
-							}
-						}
-					}
-				}
-				.home__list-link{
-					flex: 1 1 33.333%;
-					align-self: flex-end;
-					.arrow.arrow-list{
-						padding: 0 0 10% 0;
-						img {
-							width: 7%
-						}
-					}
-				}
-			}
-		}
-
-		.home__column1 {
-			.home__list {
-				align-self: flex-start;
-			}
-		}
-
-		.home__column2 {
-			.home__collection-list {
-				order: 1;
-			}
-		}
-	}
 }
